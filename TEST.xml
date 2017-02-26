@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SUITE" parallel="methods" thread-count="12">
+
+    <test name="TEST">
+        <classes>
+            <class name="Tests">
+                <methods>
+                    <include name="Http_Request"/>
+                    <include name="Selenium_Grid_Chrome"/>
+                    <include name="Selenium_Grid_InternetExplorer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,8 @@
+https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
+https://github.com/SeleniumHQ/selenium/wiki/Grid2
+ http://www.seleniumhq.org/download
+
+java -jar selenium-server-standalone-3.1.0.jar -role hub -port 8844 -browserTimeout 69 -timeout 96
+java -Dwebdriver.chrome.driver=chromedriver.exe -Dwebdriver.ie.driver=IEDriverServer.exe -jar selenium-server-standalone-3.1.0.jar -role node -hub http://localhost:8844
+
+http://localhost:8844/grid/console
